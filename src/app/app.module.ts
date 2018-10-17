@@ -13,8 +13,8 @@ import { createCustomElement } from '@angular/elements';
   imports: [
     BrowserModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  entryComponents: [HighlightTextComponent],
+  providers: []
 })
 export class AppModule {
   constructor(private injector: Injector) {

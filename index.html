@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Custom Element</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      display: flex;
+      flex-direction: COLUMN;
+      align-items: CENTER;
+      justify-content: center;
+      height: 100vh;
+      font-family: 'calibri';
+      font-size: 30px;
+    }
+
+    div {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    Hello
+    <highlight-me color="#dc3958">'Custom color!'</highlight-me>
+  </div>
+  <div>
+    Hello
+    <highlight-me>'Default!' </highlight-me>
+  </div>
+  <script src="highlightme.js"></script>
+</body>
+
+</html>
