@@ -17,7 +17,7 @@ It's always a good practice to reuse code as much as possible, and using angular
 
 First you'll want to make sure you have latest Angular CLI ( >6.0.0 ) installed. If not follow below steps :
 
-```
+```javascript
 npm uninstall -g @angular/cli // Uninstall existing CLI
 npm install -g @angular/cli@latest // Install latest CLI
 
@@ -48,7 +48,7 @@ this will create the highlight-text component with view encapsulation to Native.
 
 ## Our Component code looks like this :
 
-```
+```javascript
 import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
 
 @Component({
@@ -91,7 +91,7 @@ Register the component in declaration array and entryComponents Array.
 
 ## Our app.module.ts looks like below :
 
-```
+```javascript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Injector } from '@angular/core';
 
@@ -132,7 +132,7 @@ We are done with our configuration.
 ## Let's update our package.json
 
 Update scripts section to package.json to :
-```
+```javascript
 "build": "ng build –-prod –-output-hashing=none",
 "package": "cat dist/<project_name>/{runtime,polyfills,scripts,main}.js > highlightme.js ",
 ```
