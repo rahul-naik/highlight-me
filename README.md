@@ -79,7 +79,8 @@ export class HighlightTextComponent implements OnInit {
 ```
 
 We have used decorator named @Input to get the color value which we will pass to the custom element and binded this value in template in `ngStyle` to highlight the selected text with the color passed.
-We have used `ng-content` tag to ensure the content projection so that whatever text we include in our custom element will get projected inside `ng-content` . Read more on content projection [here](https://alligator.io/angular/content-projection-angular/)
+We have used `ng-content` tag to ensure the content projection so that whatever text we include in our custom element will get projected inside `ng-content` . Read more on content projection [here](https://alligator.io/angular/content-projection-angular/).
+
 So we are done with our custom element.
 
 ## Registering component :
